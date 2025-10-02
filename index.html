@@ -63,7 +63,7 @@
             <input type="hidden" name="language" value="uz">
             <input type="hidden" name="next" value="{{ request.path }}">
             <button type="submit" class = 'bu' style="background: none; border: none; color: inherit; cursor: pointer;" 
-                    {% if LANGUAGE_CODE == 'uz' %}class="active"{% endif %}>🇺🇿 UZ</button>
+                    {% if LANGUAGE_CODE = 'uz' %}class="active"{% endif %}>🇺🇿 UZ</button>
           </form>
           <form action="{% url 'set_language' %}" method="post" style="display: inline;">
             {% csrf_token %}
