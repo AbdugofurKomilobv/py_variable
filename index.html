@@ -46,7 +46,7 @@
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="{% static 'assets/img/logo.png' %}" alt=""> -->
+    
       <h1 class="sitename">Komilov Abdugofur</h1>
     </a>
 
@@ -70,7 +70,7 @@
             <input type="hidden" name="language" value="en">
             <input type="hidden" name="next" value="{{ request.path }}">
             <button class = 'bu' type="submit" style="background: none; border: none; color: inherit; cursor: pointer;"
-                    {% if LANGUAGE_CODE == 'en' %}class="active"{% endif %}>🇬🇧 EN</button>
+                    {% if LANGUAGE_CODE = 'en' %}class="active"{% endif %}>🇬🇧 EN</button>
           </form>
         </li>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
